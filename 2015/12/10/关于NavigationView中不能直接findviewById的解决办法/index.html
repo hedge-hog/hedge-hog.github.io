@@ -5,16 +5,16 @@
   
   <title>关于NavigationView中不能直接findviewById的解决办法 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前几天把Android官方的Design包从23.0.1升级到23.1.1，结果万万没想到，官方给的Design包居然“出问题了”">
+  <meta name="description" content="前几天把Android官方的Design包从23.0.1升级到23.1.1，结果万万没想到，官方给的Design包居然“出问题了”，之前在headerLayout中写的布局文件findviewById后，找不到，会报错。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于NavigationView中不能直接findviewById的解决办法">
 <meta property="og:url" content="http://hedgehog.love/2015/12/10/关于NavigationView中不能直接findviewById的解决办法/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="前几天把Android官方的Design包从23.0.1升级到23.1.1，结果万万没想到，官方给的Design包居然“出问题了”">
-<meta property="og:updated_time" content="2015-12-10T16:00:58.166Z">
+<meta property="og:description" content="前几天把Android官方的Design包从23.0.1升级到23.1.1，结果万万没想到，官方给的Design包居然“出问题了”，之前在headerLayout中写的布局文件findviewById后，找不到，会报错。">
+<meta property="og:updated_time" content="2015-12-10T16:20:35.899Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于NavigationView中不能直接findviewById的解决办法">
-<meta name="twitter:description" content="前几天把Android官方的Design包从23.0.1升级到23.1.1，结果万万没想到，官方给的Design包居然“出问题了”">
+<meta name="twitter:description" content="前几天把Android官方的Design包从23.0.1升级到23.1.1，结果万万没想到，官方给的Design包居然“出问题了”，之前在headerLayout中写的布局文件findviewById后，找不到，会报错。">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -115,7 +115,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/关于/" style="font-size: 10px;">关于</a> <a href="/tags/教程/" style="font-size: 20px;">教程</a>
+						<a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/NavigationView/" style="font-size: 10px;">NavigationView</a> <a href="/tags/关于/" style="font-size: 10px;">关于</a> <a href="/tags/教程/" style="font-size: 10px;">教程</a>
 					</div>
 				</section>
 				
@@ -213,7 +213,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教程/">教程</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NavigationView/">NavigationView</a></li></ul>
 	</div>
 
         
@@ -224,7 +224,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>前几天把Android官方的Design包从23.0.1升级到23.1.1，结果万万没想到，官方给的Design包居然“出问题了”</p>
+        <p>前几天把Android官方的Design包从23.0.1升级到23.1.1，结果万万没想到，官方给的Design包居然“出问题了”，之前在headerLayout中写的布局文件findviewById后，找不到，会报错。<br><a id="more"></a>  </p>
+<p>后来，Google了一下，发现不少人都碰到这个错误，先说解决办法，有两种</p>
+<ul>
+<li><p>第一个，憋升级，还是先退回去吧，继续23.0.1的Design包用着。  </p>
+</li>
+<li><p>第二个，先得到headerLayout的父级容器，再用它的父级容器去findviewById，下边是示例代码  </p>
+</li>
+</ul>
+<figure class="highlight dns"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">headerView = navigationView.getHeaderView(0)<span class="comment">;</span></span><br><span class="line">userName = (TextView) headerView.findViewById(R.id.user_name)<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+<p>搞不懂Google官方推荐的东西，为什么升级的时候还会出现这种问题。</p>
 
       
     </div>
