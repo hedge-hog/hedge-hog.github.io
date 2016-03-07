@@ -3,21 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>关于我 | hedge_hog</title>
+  <title>关于NavigationView中不能直接findviewById的解决办法 | hedge_hog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一个Android开发新手，写博客是为了梳理自己学到的知识，以免时间长了之后忘记。如果博客内容恰巧能帮到你，请给我点赞:)
-方法论害死人，我的博客不会说那些大的方面，而且以我现在的水平也说不出什么干货，不谈思想，那些东西需要长时间的开发积累和历练才能出来，而且每个人都有自己不同的方式，只说那些具体的问题，那些实实在在会在开发中我碰到过的问题。">
+  <meta name="description" content="前几天把Android官方的Design包从23.0.1升级到23.1.1，结果万万没想到，官方给的Design包居然“出问题了”，之前在headerLayout中写的布局文件findviewById后，找不到，会报错。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于我">
-<meta property="og:url" content="http://hedgehog.love/2015/10/01/关于我/index.html">
+<meta property="og:title" content="关于NavigationView中不能直接findviewById的解决办法">
+<meta property="og:url" content="http://hedgehog.love/2015/12/10/NavigationView-cannot-findviewById/index.html">
 <meta property="og:site_name" content="hedge_hog">
-<meta property="og:description" content="一个Android开发新手，写博客是为了梳理自己学到的知识，以免时间长了之后忘记。如果博客内容恰巧能帮到你，请给我点赞:)
-方法论害死人，我的博客不会说那些大的方面，而且以我现在的水平也说不出什么干货，不谈思想，那些东西需要长时间的开发积累和历练才能出来，而且每个人都有自己不同的方式，只说那些具体的问题，那些实实在在会在开发中我碰到过的问题。">
-<meta property="og:updated_time" content="2016-02-29T13:46:48.798Z">
+<meta property="og:description" content="前几天把Android官方的Design包从23.0.1升级到23.1.1，结果万万没想到，官方给的Design包居然“出问题了”，之前在headerLayout中写的布局文件findviewById后，找不到，会报错。">
+<meta property="og:updated_time" content="2015-12-10T16:20:35.899Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于我">
-<meta name="twitter:description" content="一个Android开发新手，写博客是为了梳理自己学到的知识，以免时间长了之后忘记。如果博客内容恰巧能帮到你，请给我点赞:)
-方法论害死人，我的博客不会说那些大的方面，而且以我现在的水平也说不出什么干货，不谈思想，那些东西需要长时间的开发积累和历练才能出来，而且每个人都有自己不同的方式，只说那些具体的问题，那些实实在在会在开发中我碰到过的问题。">
+<meta name="twitter:title" content="关于NavigationView中不能直接findviewById的解决办法">
+<meta name="twitter:description" content="前几天把Android官方的Design包从23.0.1升级到23.1.1，结果万万没想到，官方给的Design包居然“出问题了”，之前在headerLayout中写的布局文件findviewById后，找不到，会报错。">
   
     <link rel="alternative" href="/atom.xml" title="hedge_hog" type="application/atom+xml">
   
@@ -190,11 +187,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-关于我" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-NavigationView-cannot-findviewById" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/10/01/关于我/" class="article-date">
-  	<time datetime="2015-10-01T11:37:38.000Z" itemprop="datePublished">2015-10-01</time>
+      <a href="/2015/12/10/NavigationView-cannot-findviewById/" class="article-date">
+  	<time datetime="2015-12-10T15:55:20.000Z" itemprop="datePublished">2015-12-10</time>
 </a>
     </div>
   
@@ -207,7 +204,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      关于我
+      关于NavigationView中不能直接findviewById的解决办法
     </h1>
   
 
@@ -216,7 +213,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/关于/">关于</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NavigationView/">NavigationView</a></li></ul>
 	</div>
 
         
@@ -227,15 +224,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>一个Android开发新手，写博客是为了梳理自己学到的知识，以免时间长了之后忘记。如果博客内容恰巧能帮到你，请给我点赞<br>:)</p>
-<p>方法论害死人，我的博客不会说那些大的方面，而且以我现在的水平也说不出什么干货，不谈思想，那些东西需要长时间的开发积累和历练才能出来，而且每个人都有自己不同的方式，只说那些具体的问题，那些实实在在会在开发中我碰到过的问题。</p>
-<a id="more"></a>
-<blockquote>
-<p><strong>关于我</strong>  </p>
-</blockquote>
-<p>姓名：hedge_hog<br>爱好：编程，电影，<del>山地车</del>，电子产品<br>故乡：西安<br>坐标：深圳<br>联系方式：ciwei17@gmail.com<br>或者：我的<a href="http://weibo.com/1761681710/profile?topnav=1&amp;wvr=6" target="_blank" rel="external">微博</a>，我的<a href="http://www.zhihu.com/people/hedgehoog" target="_blank" rel="external">知乎</a>,我的<a href="https://github.com/hedge-hog" target="_blank" rel="external">GitHub</a></p>
-<p>最后，用一句话与君共勉</p>
-<h1 id="Talk_is_cheap_Show_me_the_code"><strong>Talk is cheap Show me the code</strong></h1>
+        <p>前几天把Android官方的Design包从23.0.1升级到23.1.1，结果万万没想到，官方给的Design包居然“出问题了”，之前在headerLayout中写的布局文件findviewById后，找不到，会报错。<br><a id="more"></a>  </p>
+<p>后来，Google了一下，发现不少人都碰到这个错误，先说解决办法，有两种</p>
+<ul>
+<li><p>第一个，憋升级，还是先退回去吧，继续23.0.1的Design包用着。  </p>
+</li>
+<li><p>第二个，先得到headerLayout的父级容器，再用它的父级容器去findviewById，下边是示例代码  </p>
+</li>
+</ul>
+<figure class="highlight dns"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">headerView = navigationView.getHeaderView(0)<span class="comment">;</span></span><br><span class="line">userName = (TextView) headerView.findViewById(R.id.user_name)<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+<p>搞不懂Google官方推荐的东西，为什么升级的时候还会出现这种问题。</p>
+
       
     </div>
     
@@ -244,18 +243,18 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/12/10/关于NavigationView中不能直接findviewById的解决办法/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/02/27/Android-Gaussian-blur-simple-implementation/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          关于NavigationView中不能直接findviewById的解决办法
+          Android进行高斯模糊的简单实现
         
       </div>
     </a>
   
   
-    <a href="/2015/09/30/最简单的Hexo搭建博客教程/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">最简单的Hexo搭建博客教程</div>
+    <a href="/2015/10/01/aboutme/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">关于我</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -284,7 +283,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="关于我" data-title="关于我" data-url="http://hedgehog.love/2015/10/01/关于我/"></div>
+	<div class="ds-thread" data-thread-key="NavigationView-cannot-findviewById" data-title="关于NavigationView中不能直接findviewById的解决办法" data-url="http://hedgehog.love/2015/12/10/NavigationView-cannot-findviewById/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
