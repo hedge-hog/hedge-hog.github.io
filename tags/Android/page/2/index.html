@@ -3,19 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>友盟分享时碰到的问题 | hedge_hog</title>
+  <title>Tag: Android | hedge_hog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="项目最开始的时候，产品预计的分享只有微信，当然啦，现在大家最常用的还是我微信，微博、QQ、神马的反正我没用过，所以最开始搭建框架的时候就没有引入第三方的分享包，不过随着项目的深入，需求的变更，分享平台扩展到了好几个，顿时懵逼了">
-<meta property="og:type" content="article">
-<meta property="og:title" content="友盟分享时碰到的问题">
-<meta property="og:url" content="http://hedgehog.love/2016/02/27/the-problem-of-umeng-share/index.html">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="hedge_hog">
+<meta property="og:url" content="http://hedgehog.love/tags/Android/page/2/index.html">
 <meta property="og:site_name" content="hedge_hog">
-<meta property="og:description" content="项目最开始的时候，产品预计的分享只有微信，当然啦，现在大家最常用的还是我微信，微博、QQ、神马的反正我没用过，所以最开始搭建框架的时候就没有引入第三方的分享包，不过随着项目的深入，需求的变更，分享平台扩展到了好几个，顿时懵逼了">
-<meta property="og:image" content="http://7xmlea.com1.z0.glb.clouddn.com/page_jiaochengimages.jpg">
-<meta property="og:updated_time" content="2016-03-08T15:05:36.569Z">
+<meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="友盟分享时碰到的问题">
-<meta name="twitter:description" content="项目最开始的时候，产品预计的分享只有微信，当然啦，现在大家最常用的还是我微信，微博、QQ、神马的反正我没用过，所以最开始搭建框架的时候就没有引入第三方的分享包，不过随着项目的深入，需求的变更，分享平台扩展到了好几个，顿时懵逼了">
+<meta name="twitter:title" content="hedge_hog">
+<meta name="twitter:description">
   
     <link rel="alternative" href="/atom.xml" title="hedge_hog" type="application/atom+xml">
   
@@ -188,124 +186,57 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-the-problem-of-umeng-share" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap">
   
-    <div class="article-meta">
-      <a href="/2016/02/27/the-problem-of-umeng-share/" class="article-date">
-  	<time datetime="2016-02-27T15:18:09.000Z" itemprop="datePublished">2016-02-27</time>
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2015" class="archive-year">2015</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2015/12/10/NavigationView-cannot-findviewById/" class="archive-article-date">
+  	<time datetime="2015-12-10T15:55:20.000Z" itemprop="datePublished">Dec 10</time>
 </a>
-    </div>
+        </div>
+    	 
   
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      友盟分享时碰到的问题
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2015/12/10/NavigationView-cannot-findviewById/">关于NavigationView中不能直接findviewById的解决办法</a>
     </h1>
   
 
-      </header>
-      
-      <div class="article-info article-info-post">
-        
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/友盟分享/">友盟分享</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NavigationView/">NavigationView</a></li></ul>
 	</div>
 
-        
+          
 
+        </div>
         <div class="clearfix"></div>
-      </div>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>项目最开始的时候，产品预计的分享只有微信，当然啦，现在大家最常用的还是我微信，微博、QQ、神马的反正我没用过，所以最开始搭建框架的时候就没有引入第三方的分享包，不过随着项目的深入，需求的变更，分享平台扩展到了好几个，顿时懵逼了<br><a id="more"></a><br><img src="http://7xmlea.com1.z0.glb.clouddn.com/page_jiaochengimages.jpg" alt=""><br>当然以上都是我的借口，自己挖的坑一定要自己来填。版本要发布，时间很紧迫，所以赶紧引入了umeng的社会化分享，这下坑来了。</p>
-<p>先说说历史原因，项目本身由第三方登录 <strong>微博、微信、QQ</strong>（抽时间一定要把第三方登录写出来…这次一定不拖延…），还有<strong>微信支付、支付宝支付</strong>的功能，所以已经引入了他们家的很多jar包和.so文件，而且umeng本身的社会化分享就包含了登录和支付，这怎么办，肯定会包冲突的。</p>
-<p>如果你也跟我一样，碰到这些问题，不要怕，因为坑我已经踩过了，下面就是常见坑的解决办法。</p>
-<blockquote>
-<p>微信的jar包出问题，会冲突，如果你之前使用过微信官方的libammsdk.jar，将SocialSDK_WeiXin_1的jar包删掉，因为这货和SocialSDK_WeiXin_1是重复的，重复添加jar包肯定会报错呀</p>
-<p>添加SocialSDK_Sina会报错，有个解决办法，就是在build.gradle中添加如下multiDexEnabled true</p>
-</blockquote>
-<p>还有一些在分享过程中经常碰到的错误，也先马下来</p>
-<blockquote>
-<p>微博分享with_Text不能为空，切记，否则没法打开微博客户端，只能在web端分享，这个坑碰到过好几次</p>
-<p>QQ的URL一定要填写正确，否则分享过去的内容，点击会跳到umeng的官网</p>
-</blockquote>
-<p>最后，坦率地讲，给你们一个人生忠告，<strong>不要用umeng原生的模板</strong>，因为你永远不知道需求会变成什么样子，最好写一个自定义的分享面板，这样扩展性高一点，不要问我为什么知道。</p>
-
-      
-    </div>
-    
+    </header>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2016/02/28/In-the-code-synthesized-image/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          在代码中合成图片然后分享
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2016/02/27/Android-Gaussian-blur-simple-implementation/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Android进行高斯模糊的简单实现</div>
-      <strong class="article-nav-caption">></strong>
-    </a>
-  
-</nav>
-
-  
 </article>
+  
+  
+    </div></section>
+  
 
-
-<div class="share">
-	<!-- JiaThis Button BEGIN -->
-	<div class="jiathis_style">
-		<span class="jiathis_txt">分享到：</span>
-		<a class="jiathis_button_tsina"></a>
-		<a class="jiathis_button_cqq"></a>
-		<a class="jiathis_button_douban"></a>
-		<a class="jiathis_button_weixin"></a>
-		<a class="jiathis_button_tumblr"></a>
-		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-	</div>
-	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
-	<!-- JiaThis Button END -->
-</div>
-
-
-
-<div class="duoshuo">
-	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="the-problem-of-umeng-share" data-title="友盟分享时碰到的问题" data-url="http://hedgehog.love/2016/02/27/the-problem-of-umeng-share/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"true"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-	<!-- 多说公共JS代码 end -->
-</div>
-
-
-
+    
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/tags/Android/">&laquo; Prev</a><a class="page-number" href="/tags/Android/">1</a><span class="page-number current">2</span>
+    </nav>
+  
 
 </div>
       <footer id="footer">
@@ -331,9 +262,9 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false
 	}
